@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="with=device-width,initial-scale=1.0">
+<title>university website design</title>
+<link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,700;1,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+</head>
+<body>
+ <section class="sub-header">
+     <nav>
+         <a href="index.html"><img src="image/logo.png"></a>
+         <div class="nav-links" id="navlinks">
+            <i class="fa fa-times" onclick="hidemenu()"></i>
+             <ul>
+
+                <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="course.html">COURSE</a></li>
+                            <li><a href="careers.html">CAREERS</a></li>
+                                 <li><a href="contact.html">CONTACT</a></li>                        
+                
+             </ul>
+         </div>
+         <i class="fa fa-times" onclick="showmenu()"></i>
+     </nav>
+
+   <h1>CONTACT US</h1>
+</section>
+
+<!-------contact us------->
+
+<setion class="location"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3508.6349570607463!2d77.39833841507811!3d28.43026978249805!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cc2c1cf6e02c7%3A0x979023c9894a7836!2sSatyug%20Darshan%20Institute%20of%20Engineering%20%26%20Technology!5e0!3m2!1sen!2sin!4v1643570882892!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+</setion>
+
+<section class="contact-us">
+    <div class="row">
+        <div class="conatact-col">
+            <div>
+                <i class="fa fa-home" aria-hidden="true"></i>
+                <span>xyz road abc buidlding</span>
+                <p>faridabad</p>
+            </div>
+            <div>
+                <i class="fa fa-phone" aria-hidden="true"></i>
+                <span>9876543567</span>
+                <p>Monday to Friday,9am to 4 pm</p>
+            </div>
+            <div>
+                <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                <span>info@satyug.edu.in</span>
+                <p>faridabad</p>
+            </div>
+        </div>
+        <div class="conatact-col">
+            <form action="formhandler.php" method="post">
+                <input type="text" name="name" placeholder="Enter Your Name"required>
+                <input type="email" name="email" placeholder="Enter email address"required>
+                <input type="text" name="subject" placeholder="Enter Your Subject"required>
+                
+                <button type="sunmit" class="hero-btn red-btn">Send Message</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+<!-----footer----->
+
+
+<section class="footer">
+    <h4>About Us</h4>
+    <p>Satyug Darshan Institute of Engineering & Technology
+
+      <br>  Affiliated to J.C. Bose University of Science & Technology YMCA
+        
+        <br>Faridabad
+        
+         <br>info@satyug.edu.in</p>
+    <div class="icons">
+        <i class="fa fa-facebook" aria-hidden="true"></i>
+        <i class="fa fa-instagram" aria-hidden="true"></i>
+        <i class="fa fa-twitter" aria-hidden="true"></i>
+        <i class="fa fa-linkedin" aria-hidden="true"></i>
+    </div>
+    <p> Made By Cse 3B Students</p>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!----Javascript for toggle menu----->
+<script>
+    var navlinks = document.getelementbyid("navlinks");
+
+    function showmenu(){
+        navlinks.style.right="0";
+    }
+    function hidemenu(){
+        navlinks.style.right ="-200px";
+    }
+</script>
+
+</body>
+</html>
